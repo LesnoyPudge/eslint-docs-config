@@ -1,0 +1,40 @@
+{
+    "name": "@lesnoypudge/eslint-docs-config",
+    "version": "1.0.0",
+    "description": "lesnoypudge's eslint-docs-config",
+    "main": "eslint.config.js",
+    "type": "module",
+    "scripts": {
+        "codeStyle:check": "npx eslint .",
+        "codeStyle:fix": "npx eslint . --fix",
+        "formatter:config": "npx formatter-config",
+        "deploy": "git add . && git commit -m 'update' && git push && git status",
+        "publish": "npm publish --access public"
+    },
+    "keywords": [
+        "lesnoypudge",
+        "eslint",
+        "config",
+        "docs"
+    ],
+    "author": "LesnoyPudge",
+    "license": "ISC",
+    "dependencies": {
+        "@eslint/compat": "^1.0.1",
+        "@typescript-eslint/parser": "^7.10.0",
+        "eslint": "^9.3.0",
+        "eslint-plugin-jsdoc": "^48.2.6",
+        "eslint-plugin-only-warn": "^1.1.0",
+        "eslint-plugin-tsdoc": "^0.2.17",
+        "typescript-eslint": "^7.10.0"
+    },
+    "devDependencies": {
+        "@lesnoypudge/formatter-config": "^1.0.5",
+        "prettier": "3.2.5",
+        "typescript": "^5.4.5"
+    },
+    "overrides": {
+        "eslint": "^9.3.0",
+        "typescript": "^5.4.5"
+    }
+}
